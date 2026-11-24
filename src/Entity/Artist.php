@@ -12,7 +12,7 @@ use Symfony\Component\Serializer\Attribute\Groups;
 #[ApiResource(
     normalizationContext:['groups' => ['artist:read']],
     denormalizationContext: ['groups' => ['artist:write']],
-    paginationClientEnabled: false
+    paginationEnabled: false
 )]
 class Artist
 {
